@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
-    <script src="assets/javascript/game.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet"> 
+   
+
 </head>
 <body background="assets/images/background.jpg">
     <header>
@@ -21,33 +22,47 @@
     </div>
     <div class="gameArea">
         <h1>WINTER IS COMING...</h1>
-        <h2>Press Any Key To Get Started!</h2>
-        <div class="playerStats">
-            
-            <div id="totalWins"> 
+
+        <div id='getStarted'>
+            <h2>Press Any Key To Get Started!</h2>
+        </div>
+        <div id='mainGame' style='display: none;'>
+            <div  class="playerStats">
+                <br>
                 <p>Total wins: </p>
-            </div>
-
-            <div id="remainingGuesses">
+                <div id="wins"> 
+                    
+                </div>
+                <br>
+                <p>Total losses: </p>
+                <div id="losses"> 
+                    
+                </div>
+                <br>
                 <p>Guesses remaining: </p>
+                <div id="remaining">
+                    
+                </div>
+                <br>
+                <p>Letters Already Guessed:</p>
+                <div id="guesses">
+                    
+                </div>
+                <br>
             </div>
+            <div class="guessArea">
+                <p>What Word Am I Thinking?</p>
+                <br>
+                <div id="hiddenWord">
+                    
+                </div>
 
-            <div id="lettersGuessed">
-                <ul>Letters Already Guessed: </ul>
             </div>
-
-            <button id="hintButton">Hint</button>
-
-            <div id="hint">
-                <p></p>
-            </div>
-
         </div>
-        <div class="guessArea">
-            
-        </div>
+
+        <script src="assets/javascript/game.js"></script>
     </div>
-    
+
 </body>
 </html>
 
